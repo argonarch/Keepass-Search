@@ -1,0 +1,44 @@
+{
+  "required_api_version": "2",
+  "name": "KeePassXC Query",
+  "description": "Queries for your KeePassXC",
+  "developer_name": "Argonarch",
+  "icon": "images/keepassxc-search.svg",
+  "options": {
+    "query_debounce": 0.2
+  },
+  "preferences": [
+    {
+      "id": "search",
+      "type": "keyword",
+      "name": "KeePassXC database search",
+      "description": "Search attributes in KeePassXC and copy",
+      "default_value": "kp"
+    },
+    {
+      "id": "database-path",
+      "type": "input",
+      "name": "Password database location",
+      "default_value": "~/passwords.kdbx"
+    },
+    {
+      "id": "pass-path",
+      "type": "input",
+      "name": "Password file location",
+      "default_value": "~/pass"
+    },
+    {
+      "id": "max-results",
+      "type": "input",
+      "name": "Maximum number of search results to display",
+      "default_value": "6"
+    },
+    {
+      "id": "inactivity-lock-timeout",
+      "type": "input",
+      "name": "Inactivity lock timeout",
+      "description": "Lock database if extension hasn't been used for a certain number of seconds. Set to 0 to never lock",
+      "default_value": "300"
+    }
+  ]
+}
