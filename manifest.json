@@ -22,7 +22,7 @@
       "default_value": "~/passwords.kdbx"
     },
     {
-      "id": "pass-path",
+      "id": "passfile-path",
       "type": "input",
       "name": "Password file location",
       "default_value": "~/pass"
@@ -33,12 +33,5 @@
       "name": "Maximum number of search results to display",
       "default_value": "6"
     },
-    {
-      "id": "inactivity-lock-timeout",
-      "type": "input",
-      "name": "Inactivity lock timeout",
-      "description": "Lock database if extension hasn't been used for a certain number of seconds. Set to 0 to never lock",
-      "default_value": "300"
-    }
   ]
 }
