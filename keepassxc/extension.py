@@ -65,7 +65,7 @@ class KeywordQueryEventListener(EventListener):
                 )
             return render.ask_to_enter_query()
 
-        entries = self.keepassxc_db.search(query_arg)
+        entries = self.keepassxc_db.search_titles(query_arg)
         return render.search_results(
             query_keyword, query_arg, entries, extension.get_max_result_items()
         )
